@@ -1,9 +1,8 @@
 import sys
 
 #her laver vi en en variabel kladt j, der læser MiniTest.txt filen, og viser dens indhold
-j = open("MiniTest.txt")
+with open('testfiles/testcase0.txt', 'r') as file:
+    data = file.read().replace('\n', '')
+print(data)
 
-#blader alt indhold igennem, i variablen j
-for i in range(len(j)):
-    print(i)
 #selectionSort()
