@@ -1,8 +1,11 @@
-import sys
-
-#her laver vi en en variabel kladt j, der læser MiniTest.txt filen, og viser dens indhold
-with open('testfiles/testcase0.txt', 'r') as file:
-    data = file.read().replace('\n', '')
-print(data)
-
-#selectionSort()
+# 'testfiles/testcase0.txt' Dette er den rigtige test
+#----------------------------------------------------------------------
+# åbner txt filen der indeholder det, der skal sorteres.
+#bruger data.read til at læse hele teksten i en køre. Gemmer det som lines
+with open('MiniTest.txt', 'r') as data:
+    lines = data.read()
+#finder
+størrelse = len(lines)
+# Looper igennem hver enklete bogstav i lines variablen
+for i in lines:
+    
