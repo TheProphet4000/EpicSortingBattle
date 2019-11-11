@@ -1,11 +1,11 @@
-# 'testfiles/testcase0.txt' Dette er den rigtige test
-#----------------------------------------------------------------------
-# åbner txt filen der indeholder det, der skal sorteres.
-#bruger data.read til at læse hele teksten i en køre. Gemmer det som lines
-with open('MiniTest.txt', 'r') as data:
-    lines = data.read()
-#finder maksimal størrelse
-størrelse = len(lines)
+lines = [4,7,21,5,7,4,2,1]
 
-# Looper igennem hver enklete bogstav i lines variablen
-for i in lines:
+def selectionSort(lines):
+    for i in range(len(lines)-1):
+        min = i
+        for j in range(i+1,len(lines)):
+            if lines[min]>lines[j]:
+                min = j
+        lines[min],lines[i] = lines[i],lines[min]
+    return lines
+print(selectionSort(lines))
