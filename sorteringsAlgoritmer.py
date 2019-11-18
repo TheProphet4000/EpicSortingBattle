@@ -20,11 +20,19 @@ def selectionSort(lines):
 
 #laver en funktion der kun køres når kaldt
 def insertionSort(case):
-    for i in range(1, len(case)):
-        curNum = case[i]
-        for j in range(i-1,-1,-1):
+    #Looper igennem alle tal fra 1 og op
+    for k in range(1, len(case)):
+        #laver en array
+        curNum = case[k]
+        #Lopper igennem den nye array "k" og siger -1
+        for j in range(k-1,-1,-1):
+            # hvis array j er større end curNum
             if case [j] > curNum:
+                #lav j+1 til j
                 case [j+1] = case [j]
+                #ellers
             else:
+                # j+1 er lig med curNum
                 case [j+1] = curNum
+                #stop koden, så det ikke crasher, eller gør uønsket ting.
                 break
