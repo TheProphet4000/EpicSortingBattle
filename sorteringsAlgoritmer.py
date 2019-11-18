@@ -1,7 +1,7 @@
-#laver en variable kaldt lines, og 
+#laver en variable kaldt lines, og
 lines = [4,7,21,5,7,4,2,1]
 
-#Laver en fungtion der kun køres, når kaldt.
+#Laver en funktion der kun køres, når kaldt.
 def selectionSort(lines):
     #her er der i loop, der looper igennem alle talende i lines -1
     for i in range(len(lines)-1):
@@ -17,5 +17,14 @@ def selectionSort(lines):
         lines[min],lines[i] = lines[i],lines[min]
         #retunere variablen lines
     return lines
-    #viser os hvad der er sorteret i terminalen
-print(selectionSort(lines))
+
+#laver en funktion der kun køres når kaldt
+def insertionSort(case):
+    for i in range(1, len(case)):
+        curNum = case[i]
+        for j in range(i-1,-1,-1):
+            if case [j] > curNum:
+                case [j+1] = case [j]
+            else:
+                case [j+1] = curNum
+                break
