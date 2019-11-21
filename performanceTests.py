@@ -40,6 +40,7 @@ def runTestCase(filename):
     try:
         print('Starter Bubble Sort')
         tStart = time.time()
+
         algo.bubbleSort(case)
         tSlut = time.time()
         caseResults['Bubble Sort'] = tSlut - tStart
