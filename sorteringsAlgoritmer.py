@@ -18,6 +18,7 @@ def selectionSort(case):
     return case
 
 #laver en funktion der kun køres når kaldt
+#Denne kode køre ikke som den skal, den sortere lidt men ikke det alt
 def insertionSort(case):
     #Laver en kopi, så man ikke redigere i den orginale. Altså den laver en kopi i RAM.
     case.copy()
@@ -36,7 +37,7 @@ def insertionSort(case):
                 # j+1 er lig med curNum
                 case [j+1] = curNum
                 #stop koden, så det ikke crasher, eller gør uønsket ting.
-                break
+                return case
 
 #laver en funktion der kun køres når kaldt
 def bubbleSort(case):
