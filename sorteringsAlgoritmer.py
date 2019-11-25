@@ -17,8 +17,8 @@ def selectionSort(case):
         #retunere variablen case
     return case
 
+#!!--Denne insertionSort kode køre ikke som den skal, den sortere lidt men ikke alt--!!!!!! Vi besluttede at fokusere på de andre, og dokumentationen.
 #laver en funktion der kun køres når kaldt
-#Denne kode køre ikke som den skal, den sortere lidt men ikke det alt
 def insertionSort(case):
     #Laver en kopi, så man ikke redigere i den orginale. Altså den laver en kopi i RAM.
     case.copy()
